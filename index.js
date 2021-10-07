@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import got from "got";
 import { JSDOM } from "jsdom";
 import groupBy from "lodash.groupby";
