@@ -1,0 +1,14 @@
+{
+  "name": "aws-product-list",
+  "version": "1.0.0",
+  "description": "List all AWS products, along with metadata",
+  "type": "module",
+  "main": "index.js",
+  "author": "Jonathan Morley <morley.jonathan@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "got": "^11.8.2",
+    "jsdom": "^17.0.0",
+    "lodash.groupby": "^4.6.0"
+  }
+}
