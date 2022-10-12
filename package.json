@@ -8,13 +8,8 @@
   "author": "Jonathan Morley <morley.jonathan@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "lint": "prettier --check .",
-    "fix": "prettier --write ."
-  },
-  "dependencies": {
-    "got": "^11.8.2",
-    "jsdom": "^17.0.0",
-    "lodash.groupby": "^4.6.0"
+    "format": "prettier --write .",
+    "docs": "node scripts/build-docs.js"
   },
   "devDependencies": {
     "prettier": "^2.4.1"

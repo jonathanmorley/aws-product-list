@@ -12,13 +12,7 @@
 
 ```sh
 asdf install
-npm install
-```
-
-## Usage
-
-```sh
-node .
+pnpm install
 ```
 
 ## Author

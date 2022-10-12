@@ -30,13 +30,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: asdf Install
+        uses: asdf-vm/actions/install@v1
+      - name: pnpm Install
+        run: pnpm install
+      - name: Build Docs
+        run: pnpm docs
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload entire repository
-          path: '.'
+          # Upload docs
+          path: "docs"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
