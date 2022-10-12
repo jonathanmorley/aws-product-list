@@ -9,7 +9,7 @@
   "license": "ISC",
   "scripts": {
     "format": "prettier --write .",
-    "docs": "node scripts/build-docs.js"
+    "build-docs": "node scripts/build-docs.mjs"
   },
   "devDependencies": {
     "prettier": "^2.4.1"
