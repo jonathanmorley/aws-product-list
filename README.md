@@ -13,6 +13,8 @@
 ```sh
 asdf install
 pnpm install
+pnpm build-docs
+cat docs/products.json
 ```
 
 ## Author
