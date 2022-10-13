@@ -6,11 +6,14 @@ const productsUrl = new URL(
 
 const { items } = await fetch(productsUrl).then((res) => res.json());
 
-const products = items.map(({ item }) => ({
+console.dir(items.filter(item => item.item.additionalFields.productName.includes('EC2')), { maxArrayLength: null, depth: null });
+
+const products = items.map(({ item, tags }) => ({
   id: item.name,
   name: item.additionalFields.productName,
   summary: item.additionalFields.productSummary,
   category: item.additionalFields.productCategory,
+  type: tags.find(tag => tag.tagNamespaceId === 'aws-products#type').description
 }));
 
 await fs.promises.mkdir("docs", { recursive: true });
