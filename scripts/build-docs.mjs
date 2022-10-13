@@ -1,12 +1,5 @@
 import fs from "node:fs";
-
 import he from "he";
-
-function handleHtml(html) {
-  var elem = document.createElement("textarea");
-  elem.innerHTML = html;
-  return elem.value;
-}
 
 const productsUrl = new URL(
   "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&item.locale=en_US&size=1000"
@@ -20,6 +13,7 @@ const products = items.map(({ item, tags }) => ({
   summary: he
     .decode(item.additionalFields.productSummary)
     .replaceAll(/<\/?p>/g, "")
+    .replaceAll('\u2019', "'")
     .trim(),
   category: item.additionalFields.productCategory,
   type: tags.find((tag) => tag.tagNamespaceId === "aws-products#type")
