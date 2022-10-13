@@ -1,4 +1,5 @@
 <h1 align="center">Welcome to aws-product-list 👋</h1>
+
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -8,7 +9,7 @@
 
 > List all AWS products, along with metadata
 
-## Install
+## Usage
 
 ```sh
 asdf install
@@ -16,6 +17,11 @@ pnpm install
 pnpm build-docs
 cat docs/products.json
 ```
+
+## Reference
+
+A JSON file is available at https://jonathanmorley.github.io/aws-product-list/products.json.
+This file is updated monthly.
 
 ## Author
 
