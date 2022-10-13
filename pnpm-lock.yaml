@@ -1,8 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  he: ^1.2.0
-  prettier: ^2.4.1
+  he: 1.2.0
+  prettier: 2.7.1
 
 dependencies:
   he: 1.2.0
