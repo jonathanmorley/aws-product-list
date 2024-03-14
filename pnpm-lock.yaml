@@ -1,23 +1,23 @@
-lockfileVersion: 5.4
-
-specifiers:
-  he: 1.2.0
-  prettier: 2.7.1
+lockfileVersion: '6.0'
 
 dependencies:
-  he: 1.2.0
+  he:
+    specifier: 1.2.0
+    version: 1.2.0
 
 devDependencies:
-  prettier: 2.7.1
+  prettier:
+    specifier: 2.7.1
+    version: 2.7.1
 
 packages:
 
-  /he/1.2.0:
+  /he@1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
     dev: false
 
-  /prettier/2.7.1:
+  /prettier@2.7.1:
     resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
