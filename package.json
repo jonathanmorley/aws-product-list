@@ -10,7 +10,7 @@
     "build-docs": "node scripts/build-docs.mjs"
   },
   "devDependencies": {
-    "prettier": "3.9.9"
+    "prettier": "3.9.10"
   },
   "dependencies": {
     "he": "1.2.0"
